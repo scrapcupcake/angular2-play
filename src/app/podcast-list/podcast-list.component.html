@@ -1,0 +1,13 @@
+<section class="intro">
+  <header>
+    <h1>{{(nightvaleFeed|async)?.title}}</h1>
+  </header>
+</section>
+<section class="episode" [id]="nightvale.title" *ngFor="let nightvale of nightvaleFeedEntries|async">
+  <header>
+    <h1><a [routerLink]="'/play/'+nightvale.guid">{{nightvale.title}} <button><md-icon>tap_and_play</md-icon></button></a></h1>
+  </header>
+  <main>
+    {{nightvale.text}}
+  </main>
+</section>

@@ -1,0 +1,14 @@
+    <section class="player">
+    <header><h1>{{src?.title}}</h1>
+    <p class="text_description">{{src?.text}}</p></header>
+    <main class="controls">
+        <button (click)="audio.advanceBy(-30)"><md-icon>replay_30</md-icon></button>
+        <button (click)="audio.advanceBy(-5)"><md-icon>replay_5</md-icon></button>
+        <md-icon class="play" *ngIf="!playing" (click)="play(src)">play_circle_filled</md-icon>
+        <md-icon class="pause" *ngIf="playing" (click)="audio.pause()">pause_circle_filled</md-icon>
+        <button (click)="audio.advanceBy(5)"><md-icon>forward_5</md-icon></button>
+        <button (click)="audio.advanceBy(30)"><md-icon>forward_30</md-icon></button>
+    </main>
+    <br><md-slider [(ngModel)]="currentTime" #slider></md-slider>
+    <br>Current Time:<input type="text" [ngModel]="currentTime">
+    </section>

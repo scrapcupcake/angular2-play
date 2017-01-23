@@ -1,0 +1,21 @@
+section.episode{
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  border: 0.2rem outset black;
+}
+
+section.episode header{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+section.episode main{
+  font-size: 0.9rem;
+  white-space: justify;
+}
+
+section.episode md-slider{
+  display: block;
+  width: 100%;
+}

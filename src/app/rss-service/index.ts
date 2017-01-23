@@ -1,0 +1,1 @@
+export {RssService, RssFeed, RssFeedItem} from './rss.service';
