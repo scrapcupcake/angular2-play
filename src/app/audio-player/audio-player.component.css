@@ -11,12 +11,15 @@ md-slider {
 }
 
 .controls {
-    display: flex; width: 98vw; height: 5em;
+    display: flex; 
+    width: 98vw; 
+    height: 5em;
 }
 
 .controls button{
     border: none;
-    flex:1; margin: 0 1em;
+    flex:1; 
+    margin: 0 1em;
     background-color:white;
     font-size: 1.5em;
 }
@@ -37,12 +40,14 @@ md-slider {
 }
 
 @media(orientation: portrait){
-    .controls button{
-        border: none;
-        flex:1; 
-        margin: 0 0.3em;
-        background-color:white;
-        font-size: 1em;
+    .controls{
+    }
+
+    .controls > md-icon {
+        display: block;
+        font-size: 3em;
+        text-align: center;
+        cursor: pointer;
     }
 
     .controls > button > md-icon{
@@ -50,6 +55,6 @@ md-slider {
     }
 
     .controls .play, .controls .pause{
-        flex: 1;
+        flex: 2;
     }
 }
