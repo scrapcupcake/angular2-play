@@ -35,3 +35,21 @@ md-slider {
 .controls .play, .controls .pause{
     flex: 3;
 }
+
+@media(orientation: portrait) and (max-width: 400px){
+    .controls button{
+        border: none;
+        flex:1; 
+        margin: 0 0.3em;
+        background-color:white;
+        font-size: 1em;
+    }
+
+    .controls > button > md-icon{
+        font-size: 1.2em;
+    }
+
+    .controls .play, .controls .pause{
+        flex: 1;
+    }
+}
