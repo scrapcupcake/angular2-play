@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(){
-        this.nightvaleFeed = this.rss.getFeed("http://nightvale.libsyn.com/rss");
+        this.nightvaleFeed = this.rss.getFeed("https://nightvale.libsyn.com/rss");
   }
   
 }
