@@ -11,7 +11,7 @@ export class PodcastListComponent {
     nightvaleFeedEntries;
     //Todo @Import the podcast RSS url, update RSS service to cache based on url
     constructor(private rss: RssService){
-        let feed = rss.getFeed("http://nightvale.libsyn.com/rss");        
+        let feed = rss.getFeed("https://nightvale.libsyn.com/rss");        
         this.nightvaleFeed = feed;
         this.nightvaleFeedEntries = feed.map((feed) => {return feed.entries});
     }
